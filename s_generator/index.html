@@ -1,0 +1,866 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shortcode Generator</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+
+<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/ZeroClipboard.js"></script>
+<script type="text/javascript" src="js/colorpicker.js"></script>
+<script type="text/javascript" src="js/eye.js"></script>
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="header">
+	<h1>Shortcode Generator</h1>
+</div><!-- /header -->
+<div class="input_content">
+    <label for="shortcode">Shortcode:</label>
+    <select name="shortcode" id="shortcode">
+        <option>select...</option>
+        <option value="columns-div">Columns</option>
+        <option value="buttons-div">Buttons</option>
+        <option value="dropcaps-div">Dropcaps</option>
+        <option value="blockquote-div">Blockquote</option>
+        <option value="code-div">Code</option>
+        <option value="list-div">Lists</option>
+        <option value="video-div">Video</option>
+        <option value="lightbox-div">Lightbox</option>
+        <option value="highlight-div">Highlight</option>
+        <option value="tabs-div">Tabs</option>
+        <option value="image-div">Image</option>
+        <option value="alertbox-div">Alert Box</option>
+        <option value="map-div">Map</option>
+        <option value="form-div">Form</option>
+        <option value="icon-div">Icons</option>
+        <option value="slogan-div">Slogan</option>
+        <option value="toggle-div">Toggle</option>
+        <option value="readmore-div">Read More Button</option>
+    </select>
+</div>
+
+<div id="columns-div" class="shortcode-div">
+	<div class="input_content">
+        <label for="column">Layout:</label>
+        <select name="column" id="column">
+            <option>select layout...</option>
+            <option value="2">2 Columns</option>
+            <option value="3">3 Columns</option>
+            <option value="4">4 Columns</option>
+            <option value="5">5 Columns</option>
+            <option value="6">6 Columns</option>
+        </select>
+    </div>
+    
+    
+    <div id="column-controls">
+    	<div id="columns6" class="columns-layouts">
+        	<h3>6 Columns</h3>
+        	<div class="line">
+                <span>
+                    <input id="one_sixth" type="radio" name="6columns" value="one_sixth" data="6" />
+                    <img src="images/one_sixth.png" onclick="document.getElementById('one_sixth').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_sixth1" type="radio" name="6columns" value="two_sixth1" data="5" />
+                    <img src="images/two_sixth1.png" onclick="document.getElementById('two_sixth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_sixth2" type="radio" name="6columns" value="two_sixth2" data="5" />
+                    <img src="images/two_sixth2.png" onclick="document.getElementById('two_sixth2').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_sixth3" type="radio" name="6columns" value="two_sixth3" data="5" />
+                    <img src="images/two_sixth3.png" onclick="document.getElementById('two_sixth3').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_sixth4" type="radio" name="6columns" value="two_sixth4" data="5" />
+                    <img src="images/two_sixth4.png" onclick="document.getElementById('two_sixth4').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_sixth5" type="radio" name="6columns" value="two_sixth5" data="5" />
+                    <img src="images/two_sixth5.png" onclick="document.getElementById('two_sixth5').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="line">
+                <span>
+                    <input id="three_sixth1" type="radio" name="6columns" value="three_sixth1" data="4" />
+                    <img src="images/three_sixth1.png" onclick="document.getElementById('three_sixth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="three_sixth2" type="radio" name="6columns" value="three_sixth2" data="4" />
+                    <img src="images/three_sixth2.png" onclick="document.getElementById('three_sixth2').checked = true;" />
+                </span>
+                <span>
+                    <input id="three_sixth3" type="radio" name="6columns" value="three_sixth3" data="4" />
+                    <img src="images/three_sixth3.png" onclick="document.getElementById('three_sixth3').checked = true;" />
+                </span>
+                <span>
+                    <input id="three_sixth4" type="radio" name="6columns" value="three_sixth4" data="4" />
+                    <img src="images/three_sixth4.png" onclick="document.getElementById('three_sixth4').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="line">
+                <span>
+                    <input id="four_sixth1" type="radio" name="6columns" value="four_sixth1" data="3" />
+                    <img src="images/four_sixth1.png" onclick="document.getElementById('four_sixth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="four_sixth2" type="radio" name="6columns" value="four_sixth2" data="3" />
+                    <img src="images/four_sixth2.png" onclick="document.getElementById('four_sixth2').checked = true;" />
+                </span>
+                <span>
+                    <input id="four_sixth3" type="radio" name="6columns" value="four_sixth3" data="3" />
+                    <img src="images/four_sixth3.png" onclick="document.getElementById('four_sixth3').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="line">
+                <span>
+                    <input id="five_sixth1" type="radio" name="6columns" value="five_sixth1" data="2" />
+                    <img src="images/five_sixth1.png" onclick="document.getElementById('five_sixth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="five_sixth2" type="radio" name="6columns" value="five_sixth2" data="2" />
+                    <img src="images/five_sixth2.png" onclick="document.getElementById('five_sixth2').checked = true;" />
+                </span> 
+            </div><!-- /line -->
+           
+           	<div class="clear"></div>
+    	</div><!-- /6columns -->
+        
+        <div id="columns5" class="columns-layouts">
+        	<h3>5 Columns</h3>
+        	<div class="line">
+                <span>
+                    <input id="one_fifth" type="radio" name="5columns" value="one_fifth"  data="5" />
+                    <img src="images/one_fifth.png" onclick="document.getElementById('one_fifth').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fifth1" type="radio" name="5columns" value="two_fifth1" data="4" />
+                    <img src="images/two_fifth1.png" onclick="document.getElementById('two_fifth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fifth2" type="radio" name="5columns" value="two_fifth2" data="4" />
+                    <img src="images/two_fifth2.png" onclick="document.getElementById('two_fifth2').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fifth3" type="radio" name="5columns" value="two_fifth3" data="4" />
+                    <img src="images/two_fifth3.png" onclick="document.getElementById('two_fifth3').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fifth4" type="radio" name="5columns" value="two_fifth4" data="4" />
+                    <img src="images/two_fifth4.png" onclick="document.getElementById('two_fifth4').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="line">
+                <span>
+                    <input id="three_fifth1" type="radio" name="5columns" value="three_fifth1" data="3" />
+                    <img src="images/three_fifth1.png" onclick="document.getElementById('three_fifth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="three_fifth2" type="radio" name="5columns" value="three_fifth2" data="3" />
+                    <img src="images/three_fifth2.png" onclick="document.getElementById('three_fifth2').checked = true;" />
+                </span>
+                <span>
+                    <input id="three_fifth3" type="radio" name="5columns" value="three_fifth3" data="3" />
+                    <img src="images/three_fifth3.png" onclick="document.getElementById('three_fifth3').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="line">
+                <span>
+                    <input id="four_fifth1" type="radio" name="5columns" value="four_fifth1" data="2" />
+                    <img src="images/four_fifth1.png" onclick="document.getElementById('four_fifth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="four_fifth2" type="radio" name="5columns" value="four_fifth2" data="2" />
+                    <img src="images/four_fifth2.png" onclick="document.getElementById('four_fifth2').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="clear"></div>
+            
+    	</div><!-- /5columns -->
+        
+        <div id="columns4" class="columns-layouts">
+        	<h3>4 Columns</h3>
+        	<div class="line">
+                <span>
+                    <input id="one_fourth" type="radio" name="4columns" value="one_fourth"  data="4" />
+                    <img src="images/one_fourth.png" onclick="document.getElementById('one_fourth').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fourth1" type="radio" name="4columns" value="two_fourth1" data="3" />
+                    <img src="images/two_fourth1.png" onclick="document.getElementById('two_fourth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fourth2" type="radio" name="4columns" value="two_fourth2" data="3" />
+                    <img src="images/two_fourth2.png" onclick="document.getElementById('two_fourth2').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_fourth3" type="radio" name="4columns" value="two_fourth3" data="3" />
+                    <img src="images/two_fourth3.png" onclick="document.getElementById('two_fourth3').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="line">
+                <span>
+                    <input id="three_fourth1" type="radio" name="4columns" value="three_fourth1" data="2" />
+                    <img src="images/three_fourth1.png" onclick="document.getElementById('three_fourth1').checked = true;" />
+                </span>
+                <span>
+                    <input id="three_fourth2" type="radio" name="4columns" value="three_fourth2" data="2" />
+                    <img src="images/three_fourth2.png" onclick="document.getElementById('three_fourth2').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="clear"></div>
+            
+    	</div><!-- /4columns -->
+        
+        <div id="columns3" class="columns-layouts">
+        	<h3>3 Columns</h3>
+        	<div class="line">
+                <span>
+                    <input id="one_third" type="radio" name="3columns" value="one_third" data="3" />
+                    <img src="images/one_third.png" onclick="document.getElementById('one_third').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_third1" type="radio" name="3columns" value="two_third1" data="2" />
+                    <img src="images/two_third1.png" onclick="document.getElementById('two_third1').checked = true;" />
+                </span>
+                <span>
+                    <input id="two_third2" type="radio" name="3columns" value="two_third2" data="2" />
+                    <img src="images/two_third2.png" onclick="document.getElementById('two_third2').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="clear"></div>
+            
+    	</div><!-- /3columns -->
+        
+        <div id="columns2" class="columns-layouts">
+        	<h3>2 Columns</h3>
+        	<div class="line">
+                <span>
+                    <input id="one_half" type="radio" name="2columns" value="one_half" data="2" />
+                    <img src="images/one_half.png" onclick="document.getElementById('one_half').checked = true;" />
+                </span>
+            </div><!-- /line -->
+            <div class="clear"></div>
+            
+    	</div><!-- /2columns -->
+        
+    </div><!-- /column-control -->
+    
+    <div class="column-content">
+    	<h4>Column 1</h4>
+    	<textarea id="text-1"></textarea>
+    </div><!-- /column-content-->
+    <div class="column-content">
+    	<h4>Column 2</h4>
+    	<textarea id="text-2"></textarea>
+    </div><!-- /column-content-->
+    <div class="column-content">
+    	<h4>Column 3</h4>
+    	<textarea id="text-3"></textarea>
+    </div><!-- /column-content-->
+    <div class="column-content">
+    	<h4>Column 4</h4>
+    	<textarea id="text-4"></textarea>
+    </div><!-- /column-content-->
+    <div class="column-content">
+    	<h4>Column 5</h4>
+    	<textarea id="text-5"></textarea>
+    </div><!-- /column-content-->
+    <div class="column-content">
+    	<h4>Column 6</h4>
+    	<textarea id="text-6"></textarea>
+    </div><!-- /column-content-->
+    <a href="#" id="view_code_columns" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_columns" class="copy">Copy to Clipboard</a>
+</div><!-- /columns-div-->
+
+
+
+<div id="buttons-div" class="shortcode-div">
+
+	
+    <div class="clear"></div>
+    <div id="img_buttons">
+    	<img src="images/buttons_img.jpg" alt="Buttons" class="image-frame" />
+    </div>
+    <div class="clear"></div>
+    <div class="input_content">
+        <label for="button">Style:</label>
+        <select name="button" id="button">
+            <option>select style...</option>
+            <option value="1">Style 1</option>
+            <option value="2">Style 2</option>
+            <option value="3">Style 3</option>
+            <option value="4">Style 4</option>
+            <option value="5">Style 5</option>
+        </select>
+    </div>
+    
+    <div id="button_content" class="input_content">
+    	<label for="btn_color" id="btn_color_label">Color:</label>
+        <div class="selectColor"><div style="background-color: rgb(0, 0, 255);"></div></div>
+        <input type="text" name="btn_color" id="btn_color" />
+        <div class="clear"></div>
+    </div><!-- /button_content -->
+    
+    <div id="button_content_link" class="input_content">
+    	<label for="btn_link">Link:</label>
+        <input type="text" name="btn_link" id="btn_link" value="http://"/>
+    </div><!-- /button_content_text -->
+    
+    <div id="button_content_text" class="input_content">
+    	<label for="btn_text">Text:</label>
+        <input type="text" name="btn_text" id="btn_text" />
+    </div><!-- /button_content_text -->
+    
+    
+    <a href="#" id="view_code_buttons" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_buttons" class="copy">Copy to Clipboard</a>
+</div><!-- /buttons-div-->
+
+
+<div id="dropcaps-div" class="shortcode-div">
+
+	
+    <div class="clear"></div>
+    <div class="input_content">
+        <label for="dropcap">Style:</label>
+        <select name="dropcap" id="dropcap">
+            <option>select style...</option>
+            <option value="1">Style 1</option>
+            <option value="2">Style 2</option>
+        </select>
+    </div>
+    
+    <div id="dropcap_color_div"  class="input_content">
+    	<label for="dropcap_color" id="dropcap_color_label">Color:</label>
+        <div class="selectColor"><div style="background-color: rgb(0, 0, 255);"></div></div>
+        <input type="text" name="dropcap_color" id="dropcap_color" />
+        <div class="clear"></div>
+    </div>
+    
+    <div class="input_content">
+    	<label for="dropcap_text">Text:</label>
+        <input type="text" name="dropcap_text" id="dropcap_text" />
+    </div>
+    
+    
+    <a href="#" id="view_code_dropcaps" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_dropcaps" class="copy">Copy to Clipboard</a>
+</div><!-- /dropcaps-div-->
+
+
+
+
+
+<div id="blockquote-div" class="shortcode-div">
+
+	
+    <div class="clear"></div>
+    <div class="input_content">
+        <label for="blockquote_align">Align:</label>
+        <select name="blockquote_align" id="blockquote_align">
+            <option>No Align</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+    </div>
+    
+    <div id="dropcap_color_div"  class="input_content">
+    	<label for="blockquote_color" id="dropcap_color_label">Color:</label>
+        <div class="selectColor"><div style="background-color: rgb(0, 0, 255);"></div></div>
+        <input type="text" name="blockquote_color" id="blockquote_color" />
+        <div class="clear"></div>
+    </div>
+    
+    <div class="input_content">
+    	<label for="blockquote_text">Text:</label>
+        <input type="text" name="blockquote_text" id="blockquote_text" />
+    </div>
+    
+    <div class="input_content">
+    	<label for="blockquote_cite">Cite:</label>
+        <input type="text" name="blockquote_cite" id="blockquote_cite" />
+    </div>
+    
+    
+    <a href="#" id="view_code_blockquote" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_blockquote" class="copy">Copy to Clipboard</a>
+</div><!-- /blockquote-div-->
+
+
+
+<div id="code-div" class="shortcode-div">
+    <div class="input_content">
+    	<h4 class="margin">Text:</h4>
+        <textarea class="margin" name="code_text" id="code_text"></textarea>
+    </div>
+
+    
+    <a href="#" id="view_code_code" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_code" class="copy">Copy to Clipboard</a>
+</div><!-- /code-div-->
+
+
+
+<div id="list-div" class="shortcode-div">
+	
+     <div id="img_lists">
+    	<img src="images/lists.jpg" alt="Lists" class="image-frame" />
+    </div>
+    
+    <div class="input_content">
+        <label for="list">Style:</label>
+        <select name="list" id="list">
+            <option>select style...</option>
+            <option value="1">Style 1</option>
+            <option value="2">Style 2</option>
+            <option value="3">Style 3</option>
+            <option value="4">Style 4</option>
+            <option value="5">Style 5</option>
+            <option value="6">Style 6</option>
+            <option value="7">Style 7</option>
+            <option value="8">Style 8</option>
+            <option value="9">Style 9</option>
+            <option value="10">Style 10</option>
+            <option value="11">Style 11</option>
+        </select>
+    </div>
+    
+    <div id="list_color_div"  class="input_content">
+    	<label for="list_color" id="dropcap_color_label">Color:</label>
+        <div class="selectColor"><div style="background-color: rgb(0, 0, 255);"></div></div>
+        <input type="text" name="list_color" id="list_color" />
+        <div class="clear"></div>
+    </div>
+    
+    <div id="list_item_div1" class="input_content">
+    	<label for="list_text1">Item:</label>
+        <input type="text" name="list_text1" id="list_text1" class="list_item" />
+    </div>
+    <div class="clear"></div>
+    <div class="input_content">
+        <a href="#" id="one_more_list">One more?</a>
+    </div>
+
+    
+    <a href="#" id="view_code_list" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_list" class="copy">Copy to Clipboard</a>
+</div><!-- /list-div-->
+
+
+
+<div id="video-div" class="shortcode-div">
+	
+    
+    <div class="input_content">
+        <label for="video">Type:</label>
+        <select name="video" id="video">
+            <option>select type...</option>
+            <option value="youtube">YouTube</option>
+            <option value="vimeo">Vimeo</option>
+            <option value="dailymotion">Daily Motion</option>
+        </select>
+    </div>
+    
+    <div class="input_content">
+    	<label for="video_id">Video ID:</label>
+        <input type="text" name="video_id" id="video_id" class="video_id" />
+    </div>
+    <div class="clear"></div>
+
+    
+    <a href="#" id="view_code_video" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_video" class="copy">Copy to Clipboard</a>
+</div><!-- /video-div-->
+
+
+<div id="lightbox-div" class="shortcode-div">
+	
+    
+    <div class="input_content">
+    	<label for="lightbox_image">Image URL:</label>
+        <input type="text" name="lightbox_image" id="lightbox_image" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="lightbox_title">Title:</label>
+        <input type="text" name="lightbox_title" id="lightbox_title" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="lightbox_group">Group:</label>
+        <input type="text" name="lightbox_group" id="lightbox_group" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="lightbox_text">Text:</label>
+        <input type="text" name="lightbox_text" id="lightbox_text" />
+    </div>
+    <div class="clear"></div>
+    
+    
+
+    
+    <a href="#" id="view_code_lightbox" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_lightbox" class="copy">Copy to Clipboard</a>
+</div><!-- /lightbox-div-->
+
+
+<div id="highlight-div" class="shortcode-div">
+	
+    <div class="input_content">
+        <label for="highlight">Style:</label>
+        <select name="highlight" id="highlight">
+            <option>Normal</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <div class="input_content">
+    	<label for="highlight_text">Text:</label>
+        <input type="text" name="highlight_text" id="highlight_text" />
+    </div>
+    <div class="clear"></div>
+    
+    
+
+    
+    <a href="#" id="view_code_highlight" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_highlight" class="copy">Copy to Clipboard</a>
+</div><!-- /highlight-div-->
+
+
+
+<div id="tabs-div" class="shortcode-div">
+	
+    <div id="tab_div1" class="input_content tabs">
+    	<h3>Tab 1</h3>
+    	<label for="list_text1">Menu:</label>
+        <input type="text" name="menu1" id="menu1" class="tab_menu" />
+        
+        <h4>Content:</h4>
+        <textarea id="tab_content1" class="tab_content"></textarea>
+    </div>
+    <div class="clear"></div>
+    <div class="input_content">
+        <a href="#" id="one_more_tab">One more tab?</a>
+    </div>
+    
+    
+
+    
+    <a href="#" id="view_code_tab" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_tab" class="copy">Copy to Clipboard</a>
+</div><!-- /tabs-div-->
+
+
+
+
+
+<div id="image-div" class="shortcode-div">
+
+	
+    <div class="clear"></div>
+    <div class="input_content">
+        <label for="image_align">Align:</label>
+        <select name="image_align" id="image_align">
+            <option>No Align</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+    </div>
+    
+    
+    <div class="input_content">
+    	<label for="image_url">Image URL:</label>
+        <input type="text" name="image_url" id="image_url" />
+    </div>
+
+    
+    <a href="#" id="view_code_image" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_image" class="copy">Copy to Clipboard</a>
+</div><!-- /image-div-->
+
+
+
+<div id="alertbox-div" class="shortcode-div">
+	
+     <div id="img_alertbox">
+    	<img src="images/alert_box.jpg" alt="Alert Boxes" class="image-frame" />
+    </div>
+    
+    <div class="input_content">
+        <label for="alertbox">Style:</label>
+        <select name="alertbox" id="alertbox">
+            <option>select style...</option>
+            <option value="error">Error</option>
+            <option value="check">Check</option>
+            <option value="info">Info</option>
+        </select>
+    </div>
+    
+    <div id="list_item_div1" class="input_content">
+    	<label for="alertbox_text">Text:</label>
+        <input type="text" name="alertbox_text" id="alertbox_text" />
+    </div>
+    <div class="clear"></div>
+
+    
+    <a href="#" id="view_code_alertbox" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_alertbox" class="copy">Copy to Clipboard</a>
+</div><!-- /alertbox-div-->
+
+
+
+
+
+<div id="map-div" class="shortcode-div">
+    
+    <div class="input_content">
+        <label for="map_popup">Show PopUp:</label>
+        <select name="map_popup" id="map_popup">
+            <option value="false">False</option>
+            <option value="true">True</option>
+        </select>
+    </div>
+    
+    <div class="input_content">
+    	<label for="map_text">PopUp Text:</label>
+        <input type="text" name="map_text" id="map_text" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="map_latitude">Latitude:</label>
+        <input type="text" name="map_latitude" id="map_latitude" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="map_longitude">longitude:</label>
+        <input type="text" name="map_longitude" id="map_longitude" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="map_zoom">Zoom:</label>
+        <input type="text" name="map_zoom" id="map_zoom" value="10" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="map_width">Width:</label>
+        <input type="text" name="map_width" id="map_width" value="350" />
+    </div>
+    <div class="clear"></div>
+    
+    <div class="input_content">
+    	<label for="map_height">Height:</label>
+        <input type="text" name="map_height" id="map_height" value="300" />
+    </div>
+    <div class="clear"></div>
+    
+    
+    
+
+    
+    <a href="#" id="view_code_map" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_map" class="copy">Copy to Clipboard</a>
+</div><!-- /map-div-->
+
+
+
+<div id="form-div" class="shortcode-div">
+    
+    <div class="input_content">
+    	<label for="form_mail">Your Email:</label>
+        <input type="text" name="form_mail" id="form_mail" />
+    </div>
+    <div class="clear"></div>
+    
+    
+    <a href="#" id="view_code_form" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_form" class="copy">Copy to Clipboard</a>
+</div><!-- /form-div-->
+
+
+<div id="icon-div" class="shortcode-div">
+	<div id="icons_list">
+    	<h4>Select one Icon:</h4>
+          <img src="images/Tango_Icons/Accessories-text-editor.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-accessories.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-development.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-games.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-graphics.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-internet.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-multimedia.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-office.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Applications-system.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Battery.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Camera-photo.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Dialog-error.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Dialog-information.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Dialog-warning.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Drive-cdrom.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Edit-copy_purple.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Edit-delete.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Edit-find.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Edit-paste.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Emblem-favorites.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Emblem-important.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Emblem-readonly.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-angel.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-blush.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-crying.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-devil-grin.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-glasses.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-grin.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-kiss.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-monkey.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-plain.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-sad.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-smile.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-smile-big.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-surprise.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Face-wink.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Folder.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Go-down.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Go-next.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Go-previous.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Go-up.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Image-x-generic.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Input-keyboard.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/List-add.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/List-remove.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Locked.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Mail-closed.png" width="48" height="35" class="image-frame2" />
+          <img src="images/Tango_Icons/Media-cdrom.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Media-playback-start.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Media-playback-stop.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Media-record.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Multimedia-player-ipod-standard-color.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Multimedia-player-ipod-U2-color.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Preferences-desktop-peripherals.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Preferences-system.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Process-stop.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/System-search.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/System-shutdown.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/System-users.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Unlocked.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/User-desktop.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Utilities-system-monitor.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Utilities-terminal.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/Video-display.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/View-refresh.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/X-office-address-book.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/X-office-calendar.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/X-office-document.png" width="48" height="48" class="image-frame2" />
+          <img src="images/Tango_Icons/X-office-presentation.png" width="48" height="48" class="image-frame2" />
+  </div><!-- /icon_list -->
+  <div class="clear"></div>
+    
+    
+    <a href="#" id="view_code_icon" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_icon" class="copy">Copy to Clipboard</a>
+</div><!-- /icon-div-->
+<div class="clear"></div>
+
+<div id="slogan-div" class="shortcode-div">
+    
+    <div class="input_content">
+    	<label for="slogan_text">Text:</label>
+        <input type="text" name="slogan_text" id="slogan_text" />
+    </div>
+    
+    <div class="clear"></div>
+    <div  class="input_content">
+    	<label for="slogan_button_color" id="dropcap_color_label">Button Color:</label>
+        <div class="selectColor"><div style="background-color: rgb(0, 0, 255);"></div></div>
+        <input type="text" name="slogan_button_color" id="slogan_button_color" />
+        <div class="clear"></div>
+    </div>
+    
+    <div class="input_content">
+    	<label for="slogan_button_text">Button Text:</label>
+        <input type="text" name="slogan_button_text" id="slogan_button_text" />
+    </div>
+    
+    <div class="input_content">
+    	<label for="slogan_button_link">Button Link:</label>
+        <input type="text" name="slogan_button_link" id="slogan_button_link" value="http://" />
+    </div>
+    
+    
+    <a href="#" id="view_code_slogan" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_slogan" class="copy">Copy to Clipboard</a>
+</div><!-- /slogan-div-->
+
+<div class="clear"></div>
+
+<div id="toggle-div" class="shortcode-div">
+    
+    <div class="input_content">
+    	<label for="toggle_title">Title:</label>
+        <input type="text" name="toggle_title" id="toggle_title" />
+    </div>
+    
+    <div class="toggle-content">
+    	<h4>Text:</h4>
+        <textarea name="toggle_text" id="toggle_text"></textarea>
+    </div>
+    
+    
+    <a href="#" id="view_code_toggle" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_toggle" class="copy">Copy to Clipboard</a>
+</div><!-- /toggle-div-->
+
+<div class="clear"></div>
+
+<div id="readmore-div" class="shortcode-div">
+    
+    <div class="input_content">
+    	<label for="readmore_link">Link:</label>
+        <input type="text" name="readmore_link" id="readmore_link" />
+    </div>
+    
+    
+    <a href="#" id="view_code_readmore" class="view_code_btn">View Code</a>
+    <a href="#" id="copy_readmore" class="copy">Copy to Clipboard</a>
+</div><!-- /readmore-div-->
+
+
+<div id="output-div">
+	<h3>Code:</h3>
+    <code id="output" class="code">
+    </code>
+    <div class="alert-box check-box"><p>Remember paste this code with the <strong>"HTML" tab</strong> selected.</p></div>
+</div><!-- /output-div -->
+
+
+
+
+
+</body>
+</html>

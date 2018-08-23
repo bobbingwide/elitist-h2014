@@ -1,0 +1,150 @@
+.box_b{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .35);
+	-moz-box-shadow:  0 1px 2px rgba(0, 0, 0, .35);
+	-webkit-box-shadow:  0 1px 2px rgba(0, 0, 0, .35);
+	/*padding: 5px;*/
+	margin-bottom: 0.6em;
+	border: 4px solid #fff;
+}
+
+.cool_divider{
+	background: url(images/line_divider.png) bottom repeat-x;
+  	padding-bottom: 3px;
+  	border: none;
+  	margin: 2em 0;
+}
+
+
+.in_shadow{
+	@bShadow: 0px 0px 3px rgba(0,0,0,.3) inset;
+	.box-shadow(@bShadow);
+}
+
+
+.preloader { 
+	background:url(images/preloader.gif) center center no-repeat @backgroundColor; 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 30;
+}
+
+/*Call To Action Button													*/
+/*----------------------------------------------------------------------*/
+.btn-cta{
+	background-color: @heroColor!important;
+	background-image: none;
+	color: @backgroundColor;
+	.in_shadow();
+	border:none;
+	.border-radius(2px);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	font-weight: bold;
+}
+.btn-cta:hover{
+	color: @white;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	.opacity(90);
+
+}
+
+/*More Link 															*/
+/*----------------------------------------------------------------------*/
+.simple_btn{
+	background-color: @heroColor;
+	.border-radius(3px);
+	color: #fff;
+	font-size:0.6875em;
+	font-weight:bold;
+	padding: 0.27272727272727em 0.54545454545455em;
+}
+.simple_btn:hover{
+	color: @heroColor;
+	background-color: @white;
+	text-decoration:none;
+}
+.simple_btn i{
+	margin-left: 0.45454545454545em;
+	font-weight:normal;
+}
+
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 1.15384615384615em solid transparent;
+	border-right: 1.15384615384615em solid transparent;
+	border-bottom: 1.15384615384615em solid @white;
+}
+
+
+
+.ql_tagline{
+	text-align: center;
+	border-bottom: 1px solid @heroColor;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.ql_underline_title{
+	border-bottom: 1px solid @heroColor;
+	padding-bottom: 0.1em;
+}
+
+.videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+}
+
+.videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+/*Before & After														*/
+/*----------------------------------------------------------------------*/
+.ql_beforeafter img{
+	max-width: none!important;
+}
+
+
+
+.page-template-gallery-fullscreen-php #slide-list{
+	display: none;
+}
+
+
+
+.btn-primary{
+	color: @backgroundColor;
+	text-shadow: none;
+}
+.btn-primary:hover{
+	color: @backgroundColor;
+}
+
+
+
+/*Loading																*/
+/*----------------------------------------------------------------------*/
+.ql_loading{
+	height: 500px;
+	background:url(images/preloader.gif) center center no-repeat @backgroundColor; 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 29;
+}
+.ql_height{
+	height: 500px!important;
+}

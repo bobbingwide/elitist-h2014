@@ -1,0 +1,133 @@
+#wrap{
+	display: table;
+	margin: 0 auto;
+	background-color:#fff;
+	-webkit-box-shadow: 0 0px 3px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 0px 3px rgba(0,0,0,.2);
+  	box-shadow: 0 0px 3px rgba(0,0,0,.2);
+}
+#wrap > .container{
+	margin:0 1.53846153846154em;
+}
+body{
+	background: #EEEEEE url("http://www.eneaa.com/templates/fimax/wp-content/themes/fimax/images/grid-patterns/noise1.png") repeat;
+	color: #000;
+}
+
+footer h4, #sidebar .widget h4, .masonry_item .masonry_desc, .title_underline,
+	article,
+	.page_title,
+	.single .metadata,
+	#footer h4,
+	.ql_tagline,
+	.ql_underline_title,
+	#header,
+	#sidebar .widget h4,
+	.filter_list h4,
+	.sub_footer_wrap{
+		border-bottom-color: #000!important;
+	}
+	
+	.entry,
+	.metadata,
+	#header,
+	.portfolio_item .ql_hover .short_line,
+	.portfolio_post,
+	.portfolioItem_sidebar,
+	.footer_wrap,
+	.sub_footer_wrap{
+		border-top-color: #000!important;
+	}
+
+
+	
+	.service_item .service_icon i,
+	.circle_service:hover .circle_icon,
+	ul.fancy_tags li a,
+	.pagination .active a,
+	.pagination a:hover,
+	.more-link,
+	#respond input, #contact-form input,
+	#respond .add-on, #contact-form .add-on,
+	#respond #submit-respond, #contact-form #submit-form,
+	.btn-cta,
+	.simple_btn,
+	.portfolio_item a .ql_hover .p_icon,
+	ul.source li.active a,
+	#sidebar .widget > ul li > a:hover,
+	#sidebar .widget_tag ul li a{
+		background-color: #000!important;
+	}
+	
+
+	
+	.service_item:hover .service_icon i,
+	.circle_service:hover h3,
+	.post_title h3 a:hover,
+	.post_icon i,
+	.metadata ul li:hover i,
+	.metadata ul li a:hover,
+	ul.fancy_tags li a:hover,
+	.pagination a,
+	.more-link:hover,
+	#respond #submit-respond:hover, #contact-form #submit-form:hover,
+	.widget_recent_posts ul li h6 a, .widget_popular_posts ul li h6 a,
+	footer .twitter_widget ul li i,
+	.contact_info .contact_info li i,
+	footer .quick_contact .form input,
+	footer .quick_contact .form textarea,
+	.simple_btn:hover,
+	h2.intro_line strong,
+	#header .jqueryslidemenu > ul > li > a:hover,
+	#header .jqueryslidemenu > ul > .current_page_item > a,
+	#header .jqueryslidemenu > ul > .current_page_parent > a,
+	.filter_list ul li a:hover,
+	.filter_list ul li.active a,
+	ul.source li a:hover,
+	ul.source li.active a:hover,
+	#sidebar .widget ul li > a:hover,
+	#sidebar .twitter_widget ul li i,
+	#sidebar .widget_recent_comments ul li:before,
+	#sidebar .widget_recent_comments ul li i,
+	#sidebar .widget_recent_comments ul li a:hover,
+	#sidebar .widget_tag ul li a:hover,
+	.widget_search i{
+		color: #000!important;
+	}
+	
+	
+	
+	#respond .add-on,
+	.service_item .service_icon i,
+	.pagination a,
+	#respond input, #contact-form input,
+	#respond textarea, #contact-form textarea,
+	#respond .add-on, #contact-form .add-on,
+	footer .quick_contact .form input:focus,
+	footer .quick_contact .form textarea:focus,
+	.portfolio_item a .ql_hover,
+	.widget_search #s:focus,
+	.widget_post_tabs .nav-tabs > .active > a:hover,
+	.widget_post_tabs .tab-content{
+		border-color: #000!important;
+	}
+
+	.widget_post_tabs .nav-tabs > .active > a{
+		border-color: #000  #000 transparent!important;
+	}
+
+
+
+
+
+	.logo_container h1 a,
+	#footer h4,
+	#footer ul li > a:hover, footer ol li > a:hover,
+	.filter_list h4,
+	.sub_footer_wrap,
+	#footer p, #footer ul, #footer ol,
+	#footer ul li > a, footer ol li > a,
+	.metadata ul li strong,
+	.portfolio_item .ql_hover h2{
+		color: #000!important;
+	}

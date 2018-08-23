@@ -1,0 +1,18 @@
+/* (C) Copyright Bobbing Wide 2011-2013 */
+/* Dummy custom.css */
+
+/* CSS for responsive [bw_video] shortcode when width and height are not specified. Based on Advanced-Responsive-Video-Embedder */ 
+.bw_video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;margin-bottom: 20px; }
+.bw_video_inner {display: block;position: absolute; top: 0;left: 0; width: 100%;height: 100% }
+
+/* #header .jqueryslidemenu ul.nav { float: left; } */
+
+.block h3 { font-size: 16px; }
+.bw_testimonial { background-color: #111111; }
+
+div.aligncenter { text-align: center; }
+
+#bw_map_canvas { color: #222; }
+
+div#gallery img { margin-bottom: 5px; }
+
