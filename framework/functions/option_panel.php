@@ -229,7 +229,8 @@ if ( !function_exists( 'options_typography_google_fonts' ) ) {
 		$selected_fonts = array(
 			$google_font['face'],
 			$google_mixed['face'],
-			$google_mixed_2['face'] );
+			//$google_mixed_2['face'] 
+			);
 		// Remove any duplicates in the list
 		$selected_fonts = array_unique($selected_fonts);
 		// Check each of the unique fonts against the defined Google fonts
@@ -256,7 +257,7 @@ function options_typography_enqueue_google_font($font) {
 	if ( $font == 'Raleway' )
 		$font = 'Raleway:100';
 	$font = str_replace(" ", "+", $font);
-	wp_enqueue_style( "options_typography_$font", "http://fonts.googleapis.com/css?family=$font", false, null, 'all' );
+	wp_enqueue_style( "options_typography_$font", "https://fonts.googleapis.com/css?family=$font", false, null, 'all' );
 }
 
 
