@@ -120,7 +120,7 @@
 		
 		
 		//jQuery Gmap  ============================================
-		wp_register_script('gmap-key', 'http://maps.google.com/maps/api/js?sensor=true', false);
+		wp_register_script('gmap-key', 'https://maps.google.com/maps/api/js?sensor=true', false);
 		wp_register_script('gmap', THEME_JS . '/jquery.ui.map.min.js', array('jquery', 'gmap-key'), '3.0', false);
 
 		wp_enqueue_script('gmap-key');
