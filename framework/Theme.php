@@ -267,19 +267,19 @@ class Theme {
 	 */
 	public function widgets(){
 		//require_once (THEME_WIDGETS . "/social-share-widget.php");
-		require_once (THEME_WIDGETS . "/related-posts.php");
-		require_once (THEME_WIDGETS . "/social.php");
-		require_once (THEME_WIDGETS . "/contact-info.php");
+		//require_once (THEME_WIDGETS . "/related-posts.php");
+		//require_once (THEME_WIDGETS . "/social.php");
+		//require_once (THEME_WIDGETS . "/contact-info.php");
 		require_once (THEME_WIDGETS . "/quick-contact.php");
-		require_once (THEME_WIDGETS . "/twitter-widget.php");
-		require_once (THEME_WIDGETS . "/advertisement_125.php");
+		//require_once (THEME_WIDGETS . "/twitter-widget.php");
+		//require_once (THEME_WIDGETS . "/advertisement_125.php");
 		//require_once (THEME_WIDGETS . "/about_author_widget.php");
-		require_once (THEME_WIDGETS . "/most-popular.php");
-		require_once (THEME_WIDGETS . "/tags.php");
+		//require_once (THEME_WIDGETS . "/most-popular.php");
+		//require_once (THEME_WIDGETS . "/tags.php");
 		//require_once (THEME_WIDGETS . "/testimonials.php");
-		require_once (THEME_WIDGETS . "/suscribe_twitter_btn.php");
+		//require_once (THEME_WIDGETS . "/suscribe_twitter_btn.php");
 		//require_once (THEME_WIDGETS . "/latest_work.php");
-		require_once (THEME_WIDGETS . "/post-tabs.php");
+		//require_once (THEME_WIDGETS . "/post-tabs.php");
 	}
 	
 	

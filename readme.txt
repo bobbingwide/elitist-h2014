@@ -1,4 +1,4 @@
-elitist-h2014 v1.1 readme.txt
+elitist-h2014 v1.2.0 readme.txt
 built from elitist-h v1.0.1  
     
 see style.css for the information required by WordPress.org
@@ -7,7 +7,7 @@ see style.css for the information required by WordPress.org
 The original theme was Elitist. It would have been rather complicated to create a child theme that could do what the client wanted
 so I had to clone it to create a derivative theme.
  
-For part of the explanation see @link http://herbmiller.me/2013/05/13/h2gd-part-24-fatal-error-cannot-redeclare-a/
+For part of the explanation see @link http://herbmiller.me/h2gd-part-24-fatal-error-cannot-redeclare-a/
 
 Subsequently Elitist-h2014 is a new version which alters the display for single portfolio 
 
@@ -24,6 +24,10 @@ All other parts of the theme including, but not limited to the CSS code, images,
 In order to comply with the spirit of the Envato license this theme will only be made available to licencees of the original Elitist theme.
 
 == Changelog == 
+= 1.2.0 = 
+* Change: Support https  Issue #1 
+* Change: Support PHP7   Issue #2
+
 = 1.1 = 
 * Change: single-portfolio.php replaced by gallery-bootstrap.php
 * Change: altered stylesheet and script inclusion so that single portfolio works as bootstrap gallery 
