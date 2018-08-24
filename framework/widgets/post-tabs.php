@@ -1,6 +1,8 @@
 <?php
 global $defaults;
-add_action("widgets_init", create_function('', 'return register_widget("Post_Tabs");'));
+//add_action("widgets_init", create_function('', 'return register_widget("Post_Tabs");'));
+register_widget("Post_Tabs");
+
 
 // default values
 $defaults = array(
@@ -11,9 +13,9 @@ $defaults = array(
 
 
 class Post_Tabs extends WP_Widget {
-	function Post_Tabs() {
+	function __construct() {
 		$widget_ops = array('description' => __( "Displays tabs with Recent and Popular posts.". "quemalabs_admin") );
-		$this->WP_Widget('post_tabs', __('Post Tabs - eneaa', 'quemalabs_admin'), $widget_ops);
+		parent::__construct('post_tabs', __('Post Tabs - eneaa', 'quemalabs_admin'), $widget_ops);
 	}
 
 	function form($instance) {

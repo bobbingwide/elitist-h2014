@@ -3,9 +3,9 @@
 
 class social extends WP_Widget {
 	
-	function social() {
+	function __construct() {
 		$widget_ops = array('classname' => 'social', 'description' => 'Add a social widget' );
-		$this->WP_Widget('social', 'Social - eneaa', $widget_ops);
+		parent::__construct('social', 'Social - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {

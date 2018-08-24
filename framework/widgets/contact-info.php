@@ -3,9 +3,9 @@
 
 class contact_info extends WP_Widget {
 	
-	function contact_info() {
+	function __construct() {
 		$widget_ops = array('classname' => 'contact_info', 'description' => 'Add a your contact info' );
-		$this->WP_Widget('contact_info', 'Contact Info - eneaa', $widget_ops);
+		parent::__construct('contact_info', 'Contact Info - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {

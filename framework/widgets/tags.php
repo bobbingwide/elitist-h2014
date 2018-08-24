@@ -3,9 +3,9 @@
 
 class widget_tag extends WP_Widget {
 	
-	function widget_tag() {
+	function __construct() {
 		$widget_ops = array('classname' => 'widget_tag', 'description' => 'Displays your tags with style' );
-		$this->WP_Widget('widget_tag', 'Fancy Tags - eneaa', $widget_ops);
+		parent::__construct('widget_tag', 'Fancy Tags - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {

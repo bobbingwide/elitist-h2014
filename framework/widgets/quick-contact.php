@@ -3,9 +3,9 @@
 
 class quick_contact extends WP_Widget {
 	
-	function quick_contact() {
+	function __construct() {
 		$widget_ops = array('classname' => 'quick_contact', 'description' => 'Quick contact form' );
-		$this->WP_Widget('quick_contact', 'Quick Contact - eneaa', $widget_ops);
+		parent::__construct('quick_contact', 'Quick Contact - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {

@@ -1,6 +1,7 @@
 <?php
 global $defaults;
-add_action("widgets_init", create_function('', 'return register_widget("Popular_Posts");'));
+//add_action("widgets_init", create_function('', 'return register_widget("Popular_Posts");'));
+register_widget( "Popular_Posts" );
 
 // default values
 $defaults = array(
@@ -11,9 +12,9 @@ $defaults = array(
 
 
 class Popular_Posts extends WP_Widget {
-	function Popular_Posts() {
+	function __construct() {
 		$widget_ops = array('description' => __( "Displays links to the posts with the most comments.", 'quemalabs_admin') );
-		$this->WP_Widget('popular_posts', __('Popular Posts - eneaa', 'quemalabs_admin'), $widget_ops);
+		parent::__construct('popular_posts', __('Popular Posts - eneaa', 'quemalabs_admin'), $widget_ops);
 	}
 
 	function form($instance) {

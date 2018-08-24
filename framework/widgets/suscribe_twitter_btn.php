@@ -3,9 +3,9 @@
 
 class rss_tw_btn extends WP_Widget {
 	
-	function rss_tw_btn() {
+	function __construct() {
 		$widget_ops = array('classname' => 'rss_tw_btn', 'description' => 'Add a social share widget' );
-		$this->WP_Widget('rss_tw_btn', 'Suscribe & Twitter Btns - eneaa', $widget_ops);
+		parent::__construct('rss_tw_btn', 'Suscribe & Twitter Btns - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {

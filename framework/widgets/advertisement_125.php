@@ -3,9 +3,9 @@
 
 class ad_125 extends WP_Widget {
 	
-	function ad_125() {
+	function __construct() {
 		$widget_ops = array('classname' => 'ad_125', 'description' => 'Displays Ads' );
-		$this->WP_Widget('ad_125', 'Advertisement 125px - eneaa', $widget_ops);
+		parent::__construct('ad_125', 'Advertisement 125px - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {

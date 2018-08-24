@@ -167,16 +167,19 @@ function admin_print_scripts(){
 
 	    if(is_array($sidebars)){
 			foreach($sidebars as $sidebar){
-				$sidebar_class = name_to_class($sidebar);
-				register_sidebar(array(
-					'name'=>$sidebar,
-			    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		   			'after_widget' => '</div>',
-		   			'before_title' => '<h4>',
-					'after_title' => '<i></i></h4>',
-		    	));
+			  //print_r( $sidebar );
+				if ( $sidebar ) {
+					$sidebar_class = name_to_class($sidebar);
+					register_sidebar(array(
+						'name'=>$sidebar,
+							'before_widget' => '<div id="%1$s" class="widget %2$s">',
+							'after_widget' => '</div>',
+							'before_title' => '<h4>',
+						'after_title' => '<i></i></h4>',
+						));
+					}
+				}
 			}
-		}
 	}
 	
 	

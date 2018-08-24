@@ -1,9 +1,9 @@
 <?php
 class widget_related_posts extends WP_Widget {
 	
-	function widget_related_posts() {
+	function __construct() {
 		$widget_ops = array('classname' => 'widget_related_posts', 'description' => 'Show related posts on a single post page' );
-		$this->WP_Widget('widget_related_posts', 'Related Posts - Single Post - eneaa', $widget_ops);
+		parent::__construct('widget_related_posts', 'Related Posts - Single Post - eneaa', $widget_ops);
 	}
 
 	function widget($args, $instance) {
