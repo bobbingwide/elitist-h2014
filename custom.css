@@ -1,4 +1,4 @@
-/* (C) Copyright Bobbing Wide 2011-2013 */
+/* (C) Copyright Bobbing Wide 2011-2018 */
 /* Dummy custom.css */
 
 /* CSS for responsive [bw_video] shortcode when width and height are not specified. Based on Advanced-Responsive-Video-Embedder */ 
@@ -15,4 +15,9 @@ div.aligncenter { text-align: center; }
 #bw_map_canvas { color: #222; }
 
 div#gallery img { margin-bottom: 5px; }
+
+div.gm-style-iw {
+	color: rgb( 68, 68, 68 );
+}
+
 

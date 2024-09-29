@@ -223,14 +223,14 @@ if ( !function_exists( 'options_typography_google_fonts' ) ) {
 		$all_google_fonts = array_keys( options_typography_get_google_fonts() );
 		// Define all the options that possibly have a unique Google font
 		$google_font = of_get_option('google_font', 'Rokkitt, serif');
-		$google_mixed = of_get_option('google_mixed', false);
+		$google_mixed = of_get_option('google_mixed', 'Rokkitt, serif');
 		$google_mixed_2 = of_get_option('google_mixed_2', 'Arvo, serif');
 		// Get the font face for each option and put it in an array
 		$selected_fonts = array(
-			$google_font['face'],
-			$google_mixed['face'],
-			//$google_mixed_2['face'] 
-			);
+			$google_font['face']
+			//$google_mixed['face'],
+			//$google_mixed_2['face']
+            );
 		// Remove any duplicates in the list
 		$selected_fonts = array_unique($selected_fonts);
 		// Check each of the unique fonts against the defined Google fonts
