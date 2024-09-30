@@ -24,6 +24,9 @@ All other parts of the theme including, but not limited to the CSS code, images,
 In order to comply with the spirit of the Envato license this theme has only been made available to licencees of the original Elitist theme.
 
 == Changelog == 
+= 1.3.2 =
+* Fixed: Don't try to us timthumb on the portfolio page #4
+
 = 1.3.1 =
 * Fixed: Attempt to get Portfolio page working #4
 
