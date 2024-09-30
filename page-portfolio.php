@@ -55,7 +55,7 @@ Template Name: Portfolio
 
             <div id="portfolio_container" class="black_a_white">
                
-            	<div class="preloader"></div>
+            	<div class="preloader-broken"></div>
 
                     <?php 	
 					
@@ -111,10 +111,10 @@ Template Name: Portfolio
 							$i = 0;
 							foreach ($terms_list as $term) {
 									$term_parent = get_term_by('id', $terms_parents[$i], $portfolio_replacement."_categories");
-									
-					?>
+                                   
+					                ?>
 										<div class="ql_filter filter_list">
-                    						<h4><?php echo $term_parent->name; ?></h4>
+                    						<h4><?php if ( $term_parent ) echo $term_parent->name; ?></h4>
 											<ul>
 												<li class="active"><i class="icon-eye-open"></i><a href="#" data-filter="*" >All<span></span></a></li>
 												<?php
@@ -173,7 +173,7 @@ Template Name: Portfolio
 							
 						?>
     						
-                            <div <?php post_class($_termsToPrint) ?> id="post-<?php the_ID(); ?>" data-category="<?php echo $_termsToPrint; ?>" data-id="<?php echo $count;?>">
+                            <div <?php post_class($_termsToPrint) ?> id="post-<?php the_ID(); ?>" data-category="<?php echo $_termsToPrint; ?>" data-id="<?php $count=0; echo $count;?>">
                             	<?php 
 										//Get the meta for the Video option.
 										$video_link = get_post_meta(get_the_ID(), 'mb_video_link', true);

@@ -21,6 +21,7 @@ jQuery(document).ready(function($){
 				});
 
 
+			/*
 				$("#jp_play_pause").toggle(function (event) { 
 					$(this).toggleClass("ql_toggle");
 					$jquery_jplayer_1.jPlayer("pause");
@@ -28,6 +29,8 @@ jQuery(document).ready(function($){
 					$(this).toggleClass("ql_toggle");
 					$jquery_jplayer_1.jPlayer("play");
 				});
+
+			 */
 
 
 				

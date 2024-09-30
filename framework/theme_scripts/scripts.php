@@ -45,14 +45,14 @@
 	
 
 		//Flow Player ========================================================
-		wp_register_script('flowplayer', THEME_JS . '/flowplayer.min.js', array('jquery'), '5.0', true );
-		wp_enqueue_script('flowplayer');
+		//wp_register_script('flowplayer', THEME_JS . '/flowplayer.min.js', array('jquery'), '5.0', true );
+		//wp_enqueue_script('flowplayer');
 		//=================================================================
 
 		
 		//jPlayer ========================================================
-		wp_register_script('jplayer', THEME_JS . '/jquery.jplayer.min.js', array('jquery'), '2.1.0', true );
-		wp_enqueue_script('jplayer');
+		//wp_register_script('jplayer', THEME_JS . '/jquery.jplayer.min.js', array('jquery'), '2.1.0', true );
+		//wp_enqueue_script('jplayer');
 		//=================================================================
 
 		//debouncedresize =======================================================
@@ -76,8 +76,8 @@
 		//=================================================================
 
 		//audioPlayerV1 Plugin ==============================================
-		wp_register_script('audioPlayerV1', THEME_JS . '/AudioPlayerV1.js', array('jquery', 'jquery-ui-widget'), '1.1.3', false );
-		wp_enqueue_script('audioPlayerV1');
+		//wp_register_script('audioPlayerV1', THEME_JS . '/AudioPlayerV1.js', array('jquery', 'jquery-ui-widget'), '1.1.3', false );
+		//wp_enqueue_script('audioPlayerV1');
 		//=================================================================
 		
 		//prettyPhoto Plugin ==============================================
@@ -143,8 +143,8 @@
 		if (is_page_template('page-portfolio.php') || is_page_template('page-portfolio2.php')) {
 
 			//Isotope =======================================================
-			wp_register_script('isotope', THEME_JS . '/jquery.isotope.min.js', array('jquery'), '1.5.19', true );
-			wp_enqueue_script('isotope');
+			//wp_register_script('isotope', THEME_JS . '/jquery.isotope.min.js', array('jquery'), '1.5.19', true );
+			//wp_enqueue_script('isotope');
 			//=================================================================
 
 			//imagesloaded =======================================================
@@ -193,8 +193,8 @@
 
 
 		//Customs Scripts =================================================
-		wp_register_script('theme-custom', THEME_JS . '/script.js', array('jquery', 'bootstrap'), '1.0', true );
-		wp_enqueue_script('theme-custom');
+		//wp_register_script('theme-custom', THEME_JS . '/script.js', array('jquery', 'bootstrap'), '1.0', true );
+		//wp_enqueue_script('theme-custom');
 		//=================================================================
 	}
 	add_action('wp_enqueue_scripts', 'ql_enqueue_scripts');

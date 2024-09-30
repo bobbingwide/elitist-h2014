@@ -1,6 +1,6 @@
 <?php
 /**
- * Muestra un Menú de navegación del tipo Breadcrumbs
+ * Muestra un Menï¿½ de navegaciï¿½n del tipo Breadcrumbs
  *
  * @param array $args
  * @return string
@@ -32,7 +32,7 @@ function breadcrumbs( $args = '' ) {
 		return $input;
 	}
 
-	function custom_get_category_parents( $id, $link = FALSE, $separator = '/', $nicename = FALSE, $bold ){
+	function custom_get_category_parents( $id=0, $link = FALSE, $separator = '/', $nicename = FALSE, $bold=false ){
 		$chain = '';
 		$parent = &get_category( $id );
 
