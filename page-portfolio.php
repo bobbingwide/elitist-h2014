@@ -111,7 +111,7 @@ Template Name: Portfolio
 							$i = 0;
 							foreach ($terms_list as $term) {
 									$term_parent = get_term_by('id', $terms_parents[$i], $portfolio_replacement."_categories");
-                                   
+
 					                ?>
 										<div class="ql_filter filter_list">
                     						<h4><?php if ( $term_parent ) echo $term_parent->name; ?></h4>
@@ -216,8 +216,8 @@ Template Name: Portfolio
 
 
 			                        ?>
-			                        <img src="<?php echo get_template_directory_uri(); ?>/framework/timthumb.php?src=<?php echo $thumbnail[0]; ?>&amp;w=<?php echo $width; ?>&amp;h=<?php echo $height; ?>&amp;zc=1" alt="<?php the_title(); ?>" />
-			                        <span class="baw_image"><img src="<?php echo get_template_directory_uri(); ?>/framework/timthumb.php?src=<?php echo $thumbnail[0]; ?>&amp;w=<?php echo $width; ?>&amp;h=<?php echo $height; ?>&amp;zc=1&amp;f=2"></span>
+			                        <img src="<?php echo $thumbnail[0]; ?> "/>
+			                        <span class="baw_image"><img src="<?php echo $thumbnail[0]; ?> "/></span>
 			                    </a>
 
           
